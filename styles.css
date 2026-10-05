@@ -25,6 +25,8 @@
  .hero-image img{object-position:66% center}
 }
 #other-activities{scroll-margin-top:100px}
+.feature-recommendation{margin:24px 0 0;color:var(--plum);font-weight:700}
+@media(max-width:520px){.hero-copy h1{font-size:clamp(1.55rem,7.9vw,1.95rem)}}
 .other-list{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:0 0 30px;padding:0;list-style:none;counter-reset:activities}
 .other-list li{counter-increment:activities;background:white;border-top:3px solid #b8a7bf;padding:20px 24px;font-weight:600}
 .other-list li::before{content:counter(activities,decimal-leading-zero);display:block;color:var(--plum);font-size:.82rem;letter-spacing:.1em;margin-bottom:6px}
