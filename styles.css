@@ -34,8 +34,16 @@
 /* The supplied wide portrait keeps its full composition on larger screens. */
 .hero-grid{aspect-ratio:784/336}
 .hero-image img{object-position:center center}
+.hero-grid{min-height:680px}
+.hero-copy .eyebrow{margin-bottom:12px}
+.hero-copy h1{margin-bottom:16px}
+.hero-copy .role{margin-bottom:16px}
+.hero-copy .hero-address,.hero-copy .hero-promise{margin-bottom:12px;line-height:1.7}
+.hero-address-mobile{display:none}
+.hero-copy .lead{margin-bottom:24px;line-height:1.7}
 @media(max-width:980px){
  .hero-grid{display:flex;flex-direction:column;align-items:stretch;min-height:0;aspect-ratio:auto;padding:0}
+ .hero-address-mobile{display:inline}
  .hero-grid::after{display:none}
  .hero-image{position:relative;order:1;width:100%;height:clamp(240px,36vw,350px)}
  .hero-image img{object-fit:cover;object-position:72% center}
